@@ -1,0 +1,24 @@
+{
+  "name": "Account",
+  "plural": "Accounts",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "fullname": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "userThings": {
+      "type": "hasMany",
+      "model": "UserThings",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": []
+}
