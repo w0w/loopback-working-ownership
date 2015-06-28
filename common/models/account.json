@@ -15,8 +15,8 @@
   "relations": {
     "userThings": {
       "type": "hasMany",
-      "model": "UserThings",
-      "foreignKey": ""
+      "model": "UserThing",
+      "foreignKey": "accountId"
     }
   },
   "acls": [],

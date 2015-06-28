@@ -7,8 +7,8 @@ module.exports = function(app) {
     {username: 'sam', email: 'sam@loop.com', password: 'sam'}
   ], function (err, users) {
     Thing.create([
-      {name: 'Gagdet', userId: users[0].id},
-      {name: 'Gizmo', userId: users[1].id}
+      {name: 'Gagdet', accountId: users[0].id},
+      {name: 'Gizmo', accountId: users[1].id}
     ], function (err, things) {
       console.log('created sample data');
       console.log('users', users);

@@ -1,4 +1,10 @@
 <p>In the SoR, there are two users who each own one item. The ACLs should be setup so that only the owned items are
-returned. In this case, only one item should appear below.</p>
-<p>Results of <b>/UserThing/find</b></p>
+returned. In this case, only one item should appear below for the user:</p>
+
+<p>UserId/name: {{mainCtrl.user.id}}/{{mainCtrl.user.username }}</p>
+
+<p>Results of <b><a href="/api/UserThings?access_token={{mainCtrl.user.tokenId}}">/UserThing/find</a></b>:</p>
+
 <pre>{{mainCtrl.result | json}}</pre>
+
+<p>assert(mainCtrl.result.length === 1) = <b>{{ mainCtrl.result.length === 1 ? 'pass': 'fail'}}</b></p>
