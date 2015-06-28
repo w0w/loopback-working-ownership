@@ -6,8 +6,4 @@ Run with
 
     node .
 
-Set your browser to
-
-    http://localhost:3000
-
-Further 'readme' is at the page.
+Further 'readme' is on the page: [http://localhost:3000](http://localhost:3000)
