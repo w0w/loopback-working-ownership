@@ -10,4 +10,4 @@ Set your browser to
 
     http://localhost:3000
 
-I'm expecting
+Further 'readme' is at the page.
